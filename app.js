@@ -35,3 +35,34 @@ function mostrarNombres() {
 	});
 }
 
+function sortearAmigo() {
+	if (nombresAmigos.length === 0) {
+		alert('No hay nombres ingresados, ingrese al menos un nombre!');
+		return;
+	}
+	const indiceGanador = Math.floor(Math.random() * nombresAmigos.length);
+	const ganador = nombresAmigos[indiceGanador];
+	mostrarGanador(ganador);
+}
+
+function mostrarGanador(nombre) {
+	const resultado = document.getElementById('resultado');
+	resultado.innerHTML = '';
+	const li = document.createElement('li');
+	li.textContent = `¡El ganador es: ${nombre}!`;
+	li.style.fontWeight = 'bold';
+	resultado.appendChild(li);
+}
+
+// Permitir agregar amigo con Enter
+document.addEventListener('DOMContentLoaded', function() {
+	const input = document.getElementById('amigo');
+	if (input) {
+		input.addEventListener('keydown', function(e) {
+			if (e.key === 'Enter') {
+				agregarAmigo();
+			}
+		});
+	}
+});
+
