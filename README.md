@@ -19,11 +19,12 @@ Proyecto-amigo-secreto/
    - Escribe el nombre de un participante en el campo de texto y haz clic en "Añadir" o presiona Enter.
    - El nombre se agregará a la lista de participantes.
    - Si el campo está vacío, se mostrará un mensaje de error.
+ ![Logo Amigo Secreto](assets/image1.png)
 
 2. **Sortear amigo:**
    - Haz clic en el botón "Sortear amigo" para seleccionar aleatoriamente un ganador entre los nombres ingresados.
    - Si no hay nombres, se mostrará una alerta indicando que no hay participantes.
-
+![Logo Amigo Secreto](assets/image2.png)
 3. **Iniciar un juego nuevo:**
     - Para reiniciar el juego y iniciar con nuevos nombres recargar la pagina o presiona F5
 
